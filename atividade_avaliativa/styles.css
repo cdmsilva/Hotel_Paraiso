@@ -1,0 +1,63 @@
+body {
+    display: grid;
+}
+
+header {
+    background-color: #9D8080;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo>img {
+    height: 50%;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: black;
+}
+
+.sem_fundo {
+    text-align: center;
+}
+
+.depois_eu_renomeio {
+    background-image: url(img/hero.jpg);
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.depois_eu_renomeio>button {
+    border-bottom: 5%;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+.fotos_itacare {
+    background-color: #C3C63B;
+}
+
+.banner {
+    text-align: center;
+    background-color: #191c03;
+    color: white;
+  
+}
+.banner > div{
+    display: inline-block;
+}
+
+.assine_com_email{
+    color: #C3C63B;
+    text-align: center;
+}
+
+.redes_sociais {
+    background-color: #191c03;
+    color: #C3C63B;
+}
