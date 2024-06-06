@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +10,7 @@ header {
     background-color: #9D8080;
 }
 
-header > nav > a{
+header>nav>a {
     position: relative;
     text-decoration: none;
     color: black;
@@ -18,18 +18,31 @@ header > nav > a{
     font-weight: bolder;
 }
 
-header > nav{
+header>nav {
     position: static;
-    display:flex;
+    display: flex;
     justify-content: right;
 }
 
 .logo>img {
-   position: relative;
+    position: relative;
 }
 
 .slogan {
     text-align: center;
+    background-color: white;
+    color: black;
+    height: 300px;
+    margin: 30px;
+}
+.slogan>h1{
+    position: relative;
+    font-size: 2.5em;
+}
+
+.slogan > p{
+    position: relative;
+    margin: 20px;
 }
 
 .depois_eu_renomeio {
@@ -40,7 +53,8 @@ header > nav{
     background-size: cover;
     padding: 20px;
 }
-.depois_eu_renomeio > a{
+
+.depois_eu_renomeio>a {
     position: relative;
     font-size: 1.5em;
     text-decoration: none;
@@ -50,26 +64,103 @@ header > nav{
     margin: 10px 20px;
 }
 
-.fotos_itacare {
+.container {
     background-color: #C3C63B;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 28px;
+    padding: 25px;
+}
+.foto_item{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.foto_item--1{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.foto_item--2{
+    grid-row: span 2;
+    grid-column: span 3;
+}
+.foto_item--3{
+    grid-row: span 2;
+    grid-column: span 3;
+}
+.foto_item--4{
+    grid-row: span 2;
+    grid-column: span 2;
 }
 
 .banner {
     text-align: center;
     background-color: #191c03;
     color: white;
-  
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 3;
+    gap: 30px;
 }
-.banner > div{
+.banner_frase{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    color: white;
+}
+.localizacao{
+    grid-row: 2;
+    grid-column: 1;
+}
+.pacote_de_oferta{
+    grid-row: 2;
+    grid-column: 2;
+}
+.acomodacao{
+    grid-row: 2;
+    grid-column: 3;
+}
+.banner > div {
     display: inline-block;
+    color: #C3C63B;
 }
-
-.assine_com_email{
+.banner > div > p{
+    color: white;
+}
+.assine_com_email {
     color: #C3C63B;
     text-align: center;
 }
+#teste{
+    padding: 7px;
+  border: 1px solid #C3C63B;
+   border-radius: 3px;
+   width: 400px;
+   height: 30px;
+ 
+}
+#botao{
+ background-color: #C3C63B;
+ color: white;
+ height: 40px;
+ border: none;
+ border-radius: 3px;
+ padding: 10px;
+ margin-left: 5px;
+}
+
+#botao:hover{
+    color: black;
+}
 
 .redes_sociais {
+    height: 200px;
+    text-align: center;
     background-color: #191c03;
     color: #C3C63B;
+}
+.redes_sociais > img {
+    height: 30px;
+    width: 30px;
 }
